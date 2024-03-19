@@ -8,10 +8,10 @@ export TERM=xterm-256color
 apt update
 apt upgrade -y
 apt install -y --no-install-recommends \
-    libncurses5 \
-    libx11-6 libglib2.0-0 libsm6 libxi6 \
+    libncurses5 libstdc++5 \
+    libx11-6 libglib2.0-0 libsm6 libxi6 libxm4 libxp6 \
     libxrender1 libxrandr2 libfreetype6 libfontconfig1 \
-    libusb-0.1-4
+    libxcursor1 libusb-0.1-4
 
 # Install actual Xilinx software in headless mode
 yes |  /xilinx/Xilinx_ISE_DS_Lin_14.7_1015_1/bin/lin64/batchxsetup \
