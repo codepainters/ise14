@@ -24,7 +24,7 @@ docker run --rm \
     -v /etc/group:/etc/group:ro  \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
-    -e PATH=/bin:/sbin:$XILINX_PATH \
+    -e PATH=/bin:/sbin:/usr/bin:$XILINX_PATH \
     -e LD_LIBRARY_PATH=$LD_LIBRARY_PATH \
     -e XILINXD_LICENSE_FILE=$XILINXD_LICENSE_FILE \
     -e XILINX_DSP=$XILINX_DSP \
